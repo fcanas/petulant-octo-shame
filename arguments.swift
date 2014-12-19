@@ -1,4 +1,5 @@
 #!/usr/bin/env xcrun swift
 
-let args = Process.arguments[1...(Process.arguments.count-1)]
+// argument 0 is the name of the program
+let args = Process.arguments[1..<Process.arguments.count]
 println("args: \(args)")
