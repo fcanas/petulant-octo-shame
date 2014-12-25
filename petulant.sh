@@ -6,3 +6,4 @@ else
 	FORCE="i"
 fi
 cp -v$FORCE ./* ~/bin
+chmod +x ~/bin/*.sh
