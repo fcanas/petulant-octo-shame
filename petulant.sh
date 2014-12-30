@@ -5,5 +5,11 @@ else
 	echo Pass "!" as an argument to force overwriting at the destination
 	FORCE="i"
 fi
-cp -v$FORCE ./* ~/bin
+
+cp -v$FORCE ./*.sh ~/bin
 chmod +x ~/bin/*.sh
+
+cp -v$FORCE ./*.swift ~/bin
+chmod +x ~/bin/*.swift
+
+for each in setup/*.sh; do bash $each ; done
