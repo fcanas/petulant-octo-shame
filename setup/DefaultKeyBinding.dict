@@ -1,0 +1,29 @@
+{
+	/* https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/EventOverview/TextDefaultsBindings/TextDefaultsBindings.html */
+    /* Additional Emacs bindings */
+    "~f" = "moveWordForward:";
+    "~b" = "moveWordBackward:";
+    "~<" = "moveToBeginningOfDocument:";
+    "~>" = "moveToEndOfDocument:";
+    "~v" = "pageUp:";
+    "~d" = "deleteWordForward:";
+    "~^h" = "deleteWordBackward:";
+    "~\010" = "deleteWordBackward:";  /* Option-backspace */
+    "~\177" = "deleteWordBackward:";  /* Option-delete */
+ 
+    /* Escape should really be complete: */
+    /*"\033" = "complete:";*/ /* Escape */
+
+    /* Additional Emacs bindings */
+    /*"\033" = {
+        "f" = "moveWordForward:";  /* ESC-f */
+        "<" = "moveToBeginningOfDocument:";  /* ESC-< */
+        "b" = "moveWordBackward:";  /* ESC-b */
+        ">" = "moveToEndOfDocument:";  /* ESC-> */
+        "v" = "pageUp:";  /* ESC-v */
+        "d" = "deleteWordForward:";  /* ESC-d */
+        "^h" = "deleteWordBackward:";  /* ESC-Ctrl-H */
+        "\010" = "deleteWordBackward:";  /* ESC-backspace */
+        "\177" = "deleteWordBackward:";  /* ESC-delete */
+    };*/
+}
