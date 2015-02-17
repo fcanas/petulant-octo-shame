@@ -10,20 +10,8 @@
     "~^h" = "deleteWordBackward:";
     "~\010" = "deleteWordBackward:";  /* Option-backspace */
     "~\177" = "deleteWordBackward:";  /* Option-delete */
- 
-    /* Escape should really be complete: */
-    /*"\033" = "complete:";*/ /* Escape */
-
-    /* Additional Emacs bindings */
-    /*"\033" = {
-        "f" = "moveWordForward:";  /* ESC-f */
-        "<" = "moveToBeginningOfDocument:";  /* ESC-< */
-        "b" = "moveWordBackward:";  /* ESC-b */
-        ">" = "moveToEndOfDocument:";  /* ESC-> */
-        "v" = "pageUp:";  /* ESC-v */
-        "d" = "deleteWordForward:";  /* ESC-d */
-        "^h" = "deleteWordBackward:";  /* ESC-Ctrl-H */
-        "\010" = "deleteWordBackward:";  /* ESC-backspace */
-        "\177" = "deleteWordBackward:";  /* ESC-delete */
-    };*/
+    "#4" = ("insertText:", "\U21D0");
+    "#5" = ("insertText:", "\U21D4");
+    "#6" = ("insertText:", "\U21D2");
+    "#." = ("insertText:", ":goat:");
 }

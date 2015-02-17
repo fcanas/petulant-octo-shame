@@ -22,8 +22,8 @@ alias center move screenOriginX+screenSizeX/4;screenOriginY+screenSizeY/6 screen
 # bind left:alt        resize -10% +0
 bind up:alt          resize +0   -10%
 bind down:alt        resize +0   +10%
-bind right:ctrl;alt  resize -10% +0 bottom-right
-bind left:ctrl;alt   resize +10% +0 bottom-right
+# bind right:ctrl;alt  resize -10% +0 bottom-right
+# bind left:ctrl;alt   resize +10% +0 bottom-right
 bind up:ctrl;alt     resize +0   +10% bottom-right
 bind down:ctrl;alt   resize +0   -10% bottom-right
 
