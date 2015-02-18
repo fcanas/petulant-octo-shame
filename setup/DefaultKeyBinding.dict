@@ -13,6 +13,5 @@
     "#4" = ("insertText:", "\U21D0");
     "#5" = ("insertText:", "\U21D4");
     "#6" = ("insertText:", "\U21D2");
-    "#." = ("insertText:", ":goat:");
     "#0" = ("insertText:", "🐐");
 }
