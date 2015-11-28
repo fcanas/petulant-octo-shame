@@ -3,6 +3,8 @@ echo ======================
 echo Copying Configurations
 echo ======================
 
-cp -v setup/slate ~/.slate
-cp -v setup/DefaultKeyBinding.dict ~/Library/KeyBindings/
-cp -v setup/init.el ~/.emacs.d/
+# Not using slate anymore
+# cp -v setup/slate ~/.slate
+mkdir -p ~/Library/KeyBindings/ && cp -v setup/DefaultKeyBinding.dict ~/Library/KeyBindings/
+# Not using emacs at the moment
+# cp -v setup/init.el ~/.emacs.d/
