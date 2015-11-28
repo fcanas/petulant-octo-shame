@@ -12,4 +12,7 @@ chmod +x ~/bin/*.sh
 cp -v$FORCE ./*.swift ~/bin
 chmod +x ~/bin/*.swift
 
+cp -v$FORCE ./stree ~/bin/stree
+chmod +x ~/bin/stree
+
 for each in setup/*.sh; do bash $each ; done
