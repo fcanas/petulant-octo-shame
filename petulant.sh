@@ -15,4 +15,7 @@ chmod +x ~/bin/*.swift
 cp -v$FORCE ./stree ~/bin/stree
 chmod +x ~/bin/stree
 
+cp -v$FORCE ./fuxcode ~/bin/fuxcode
+chmod +x ~/bin/fuxcode
+
 for each in setup/*.sh; do bash $each ; done
