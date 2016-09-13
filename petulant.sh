@@ -21,3 +21,5 @@ cp -v$FORCE ./fuxcode ~/bin/fuxcode
 chmod +x ~/bin/fuxcode
 
 for each in setup/*.sh; do bash $each ; done
+
+cp -v$FORCE ./dot/phoenix.js ~/.phoenix.js
