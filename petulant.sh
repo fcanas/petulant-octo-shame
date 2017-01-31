@@ -6,7 +6,7 @@ else
 	FORCE="i"
 fi
 
-git config --global core.editor "emacs"
+git config --global core.editor "emacsclient"
 
 cp -v$FORCE ./*.sh ~/bin
 chmod +x ~/bin/*.sh
