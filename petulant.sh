@@ -6,7 +6,7 @@ else
 	FORCE="i"
 fi
 
-git config --global core.editor "emacsclient"
+git config --global core.editor "/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 
 cp -v$FORCE ./*.sh ~/bin
 chmod +x ~/bin/*.sh
