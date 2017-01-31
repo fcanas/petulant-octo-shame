@@ -7,9 +7,10 @@
 (package-initialize)
 
 (defvar my-packages '(better-defaults
-		                  projectile
+		      projectile
                       clojure-mode
-                      cider))
+                      cider
+		      git-commit))
 
 (dolist (p my-packages)
   (unless (package-installed-p p)
