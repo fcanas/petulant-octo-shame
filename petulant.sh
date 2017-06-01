@@ -22,4 +22,4 @@ chmod +x ~/bin/fuxcode
 
 for each in setup/*.sh; do bash $each ; done
 
-cp -v$FORCE ./dot/phoenix.js ~/.phoenix.js
+for each in ./dot/*; do dest=${each/.\/dot\//$HOME\/.}; cp -v$FORCE $each $dest; done
