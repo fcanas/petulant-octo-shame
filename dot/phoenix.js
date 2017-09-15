@@ -13,6 +13,21 @@ var grids = {
     '9 Up': {rows: 3, cols: 3},
 };
 
+function center() {
+    if (Window.recent().length == 0) {
+        return;
+    }
+    var window = Window.recent()[0];
+    var screenFrame = Screen.main().visibleFrameInRectangle();
+    var width = screenFrame.width / 3;
+    var remainingScreenWidth = screenFrame.width - width;
+    var height = screenFrame.height / 3;
+    var remainingScreenHeight = screenFrame.height - height;
+
+    var rect = {x: remainingScreenWidth / 2, y: remainingScreenHeight / 2, width: width, height: height};
+    window.setFrame(rect);
+}
+
 function grid(name) {
     var rows = grids[name].rows;
     var cols = grids[name].cols;
@@ -44,6 +59,7 @@ keys.push(new Key('3', ctrlShift, grid('3 Up')));
 keys.push(new Key('4', ctrlShift, grid('4 Up')));
 keys.push(new Key('6', ctrlShift, grid('6 Up')));
 keys.push(new Key('9', ctrlShift, grid('9 Up')));
+keys.push(new Key('c', ctrlShift, center));
 
 function moveFocusFn(dir) {
   return function moveFocus() {
@@ -79,3 +95,5 @@ function showCenteredModal(message, offset) {
   m.origin = {x: sFrame.x + mX + offset.x, y: sFrame.y + mY + offset.y};
   m.show();
 }
+
+
