@@ -19,9 +19,9 @@ function center() {
     }
     var window = Window.recent()[0];
     var screenFrame = Screen.main().visibleFrameInRectangle();
-    var width = screenFrame.width / 3;
+    var width = 2 * screenFrame.width / 3;
     var remainingScreenWidth = screenFrame.width - width;
-    var height = screenFrame.height / 3;
+    var height = 2 * screenFrame.height / 3;
     var remainingScreenHeight = screenFrame.height - height;
 
     var rect = {x: remainingScreenWidth / 2, y: remainingScreenHeight / 2, width: width, height: height};
